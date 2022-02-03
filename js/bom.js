@@ -16,7 +16,7 @@ button.addEventListener('click', function() {
   listBtn.textContent = '❌';
   list.appendChild(listItem);
 
-  listBtn.addEventListener = function(e) {
+  listBtn.onclick = function(e) {
     list.removeChild(listItem);
   }
 
