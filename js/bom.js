@@ -2,7 +2,7 @@ const list = document.querySelector('ul');
 const input = document.querySelector('input');
 const button = document.querySelector('button');
 
-button.onclick = function() {
+button.addEventListener('click', function() {
   let myItem = input.value;
   input.value = '';
 
@@ -16,13 +16,10 @@ button.onclick = function() {
   listBtn.textContent = '❌';
   list.appendChild(listItem);
 
-  listBtn.onclick = function(e) {
+  listBtn.addEventListener = function(e) {
     list.removeChild(listItem);
   }
 
   input.focus();
-  let el = document.getElementById('close-button');
-console.log(el.ariaLabel); // "Close"
-el.ariaLabel = "Close dialog"
-console.log(el.ariaLabel); // "Close dialog"
-}
+  
+});
