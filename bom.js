@@ -21,3 +21,4 @@ button.onclick = function() {
   }
 
   input.focus();
+}
